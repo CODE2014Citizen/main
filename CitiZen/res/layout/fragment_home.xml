@@ -1,0 +1,129 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="548dp"
+    tools:context=".MainActivity$HomeSectionFragment" >
+
+    <TextView
+        android:id="@+id/textViewWelcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Welcome"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/ButtonProximity"
+        style="@style/button_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonMe"
+        android:layout_below="@+id/buttonMe"
+        android:layout_marginTop="14dp"
+        android:alpha="0.8"
+        android:background="@drawable/blue_button2"
+        android:minWidth="240dp"
+        android:onClick="switchToProximity"
+        android:text="Proximity"
+        android:textColor="@color/White1" />
+
+    <Button
+        android:id="@+id/ButtonPoll"
+        style="@style/button_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ButtonProximity"
+        android:layout_below="@+id/ButtonProximity"
+        android:layout_marginTop="14dp"
+        android:alpha="0.8"
+        android:background="@drawable/blue_button2"
+        android:minWidth="240dp"
+        android:onClick="switchToPoll"
+        android:text="Poll"
+        android:textColor="@color/White1" />
+
+    <Button
+        android:id="@+id/ButtonPollResults"
+        style="@style/button_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ButtonPoll"
+        android:layout_below="@+id/ButtonPoll"
+        android:layout_marginTop="17dp"
+        android:alpha="0.8"
+        android:background="@drawable/blue_button2"
+        android:minWidth="240dp"
+        android:onClick="switchToPollResults"
+        android:text="Poll Results"
+        android:textColor="@color/White1" />
+
+    <Button
+        android:id="@+id/ButtonMap"
+        style="@style/button_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ButtonPollResults"
+        android:layout_below="@+id/ButtonPollResults"
+        android:layout_marginTop="14dp"
+        android:alpha="0.8"
+        android:background="@drawable/blue_button2"
+        android:minWidth="240dp"
+        android:onClick="switchToMap"
+        android:text="Map"
+        android:textColor="@color/White1" />
+
+    <Button
+        android:id="@+id/ButtonSubmitPoll"
+        style="@style/button_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ButtonMap"
+        android:layout_below="@+id/ButtonMap"
+        android:layout_marginTop="17dp"
+        android:alpha="0.8"
+        android:background="@drawable/blue_button2"
+        android:minWidth="240dp"
+        android:onClick="switchToSubmitPoll"
+        android:text="Submit Poll"
+        android:textColor="@color/White1" />
+
+    <Button
+        android:id="@+id/buttonMe"
+        style="@style/button_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewWelcomeMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:alpha="0.8"
+        android:background="@drawable/blue_button2"
+        android:minWidth="240dp"
+        android:onClick="switchToMe"
+        android:text="Me"
+        android:textColor="@color/White1" />
+
+    <Button
+        android:id="@+id/ButtonStats"
+        style="@style/button_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ButtonSubmitPoll"
+        android:layout_below="@+id/ButtonSubmitPoll"
+        android:layout_marginTop="14dp"
+        android:alpha="0.8"
+        android:background="@drawable/blue_button2"
+        android:minWidth="240dp"
+        android:onClick="switchToStats"
+        android:text="Stats"
+        android:textColor="@color/White1" />
+
+</RelativeLayout>
+
+
+</ScrollView>
